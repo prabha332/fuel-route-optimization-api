@@ -85,7 +85,7 @@ fuel_route_clean/
 
 
 🚀 Installation & Setup
-git clone https://github.com/your-username/fuel-route-optimization-api.git
+git clone https://github.com/prabha332/fuel-route-optimization-api.git
 cd fuel-route-optimization-api
 
 python -m venv venv
