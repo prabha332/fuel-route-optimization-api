@@ -40,13 +40,16 @@ Data Layer (Fuel Prices CSV)
   ↓
 Response (JSON API Output)
 
-🛠️ Tech Stack
-Python 3
-Django / Django REST Framework
-CSV-based dataset (fuel prices)
-Geospatial calculations (Haversine formula)
-Modular service-based architecture
 
+🛠️ Tech Stack
+
+- Python 3
+- Django / Django REST Framework
+- CSV-based dataset (fuel prices)
+- Geospatial calculations (Haversine formula)
+- Modular service-based architecture
+
+  
 📁 Project Structure
 fuel_route_clean/
 │
@@ -76,8 +79,11 @@ python manage.py migrate
 python manage.py runserver
 
 📡 API Endpoint
-POST /api/route/
-Request
+
+### POST `/api/route/`
+
+#### Request
+```json
 {
   "start": { "lat": 37.78, "lon": -122.42 },
   "end": { "lat": 25.76, "lon": -80.19 }
@@ -99,6 +105,7 @@ Response
   "message": "Optimized route generated successfully"
 }
 
+
 🗺️ Route Visualization 
 
 The API returns coordinates that can be visualized using:
@@ -106,7 +113,7 @@ The API returns coordinates that can be visualized using:
 Google Maps API
 Leaflet.js
 Mapbox
-Future enhancement: direct map rendering via GeoJSON output.
+
 
 🔍 Design Assumptions
 Vehicle fuel efficiency is constant
@@ -114,19 +121,22 @@ Maximum range: 500 miles
 Fuel stations loaded from static CSV
 Distance approximated using geospatial formula
 
+
 📊 Performance Consideration
 Efficient greedy + constraint-based optimization
 Lightweight CSV dataset for fast lookup
 Modular service architecture for scalability
 
-🧪 Testing Example
 
+🧪 Testing Example
 Use Postman or curl:
 curl -X POST http://127.0.0.1:8000/api/route/ \
 -H "Content-Type: application/json" \
 -d '{"start":{"lat":37.78,"lon":-122.42},"end":{"lat":25.76,"lon":-80.19}}'
 
+
 🎥 Demo Video
+
 
 
 📈 Future Improvements
@@ -135,6 +145,7 @@ Live fuel price API integration
 Graph-based shortest path optimization (Dijkstra / A*)
 Frontend dashboard (React + Map UI)
 Docker deployment + CI/CD pipeline
+
 
 👨‍💻 Author
 Prabhavati Agre
