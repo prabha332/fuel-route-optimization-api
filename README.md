@@ -26,9 +26,13 @@ This system solves:
 - Fuel cost minimization across journey segments
   
 
+
+### ✔ Better:
+
+```md
 ## 🧠 System Design
 
-### Core Logic Flow:
+### Core Logic Flow
 Accept start and end coordinates
 Compute total distance
 Split route based on 500-mile constraint
