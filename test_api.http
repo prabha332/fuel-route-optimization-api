@@ -1,0 +1,7 @@
+POST http://127.0.0.1:8000/api/optimize-route/
+Content-Type: application/json
+
+{
+  "start": {"lat": 37.78, "lon": -122.42},
+  "end": {"lat": 25.76, "lon": -80.19}
+}
