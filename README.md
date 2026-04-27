@@ -1,4 +1,7 @@
-# fuel-route-optimization-api
+# 🚗 Fuel Route Optimization API
+
+A Django REST API that optimizes long-distance fuel stops based on cost and vehicle range constraints.
+
 
 🔹 Overview
 
@@ -6,15 +9,16 @@ A production-style Django REST API that calculates an optimized driving route be
 
 The system is designed for long-distance logistics planning where the objective is to minimize total fuel cost while respecting range constraints.
 
-💡 Problem Statement
 
+## 💡 Problem Statement
 Long-distance travel often results in inefficient fuel planning, leading to unnecessary cost increases.
 
 This system solves:
 
-Optimal fuel stop selection
-Range-constrained route segmentation
-Fuel cost minimization across journey segments
+- Optimal fuel stop selection  
+- Range-constrained route segmentation  
+- Fuel cost minimization across journey segments
+  
 
 🧠 System Design
 Core Logic Flow:
@@ -25,19 +29,21 @@ Evaluate available fuel stations
 Select lowest-cost valid stations
 Return optimized stop sequence
 
+
 🏗️ Architecture
-Client
-  ↓
-Django URL Router
-  ↓
-Django API View (Controller Layer)
-  ↓
-Service Layer (Business Logic)
-  ↓
-Optimization Engine (Fuel Stop Algorithm)
-  ↓
-Data Layer (Fuel Prices CSV)
-  ↓
+
+Client  
+↓  
+Django URL Router  
+↓  
+Django API View (Controller Layer)  
+↓  
+Service Layer (Business Logic)  
+↓  
+Optimization Engine (Fuel Stop Algorithm)  
+↓  
+Data Layer (Fuel Prices CSV)  
+↓  
 Response (JSON API Output)
 
 
@@ -65,6 +71,7 @@ fuel_route_clean/
 │   ├── fuel_prices.csv
 │
 ├── manage.py
+
 
 🚀 Installation & Setup
 git clone https://github.com/your-username/fuel-route-optimization-api.git
