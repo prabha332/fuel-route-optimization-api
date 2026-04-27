@@ -3,7 +3,13 @@
 A Django REST API that optimizes long-distance fuel stops based on cost and vehicle range constraints.
 
 
-🔹 Overview
+
+👉 Better:
+
+### ✔ Keep consistent headings:
+
+```md id="m4k8zn"
+## 🔹 Overview
 
 A production-style Django REST API that calculates an optimized driving route between two locations in the USA and recommends cost-efficient fuel stops based on vehicle range and dynamic fuel pricing.
 
@@ -20,8 +26,9 @@ This system solves:
 - Fuel cost minimization across journey segments
   
 
-🧠 System Design
-Core Logic Flow:
+## 🧠 System Design
+
+### Core Logic Flow:
 Accept start and end coordinates
 Compute total distance
 Split route based on 500-mile constraint
@@ -30,20 +37,20 @@ Select lowest-cost valid stations
 Return optimized stop sequence
 
 
-🏗️ Architecture
+## 🏗️ Architecture
 
 Client  
-↓  
+⬇  
 Django URL Router  
-↓  
+⬇  
 Django API View (Controller Layer)  
-↓  
+⬇  
 Service Layer (Business Logic)  
-↓  
+⬇  
 Optimization Engine (Fuel Stop Algorithm)  
-↓  
+⬇  
 Data Layer (Fuel Prices CSV)  
-↓  
+⬇  
 Response (JSON API Output)
 
 
@@ -85,7 +92,7 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 
-📡 API Endpoint
+## 📡 API Endpoint
 
 ### POST `/api/route/`
 
