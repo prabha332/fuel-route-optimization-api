@@ -269,12 +269,6 @@ curl -X POST http://127.0.0.1:8000/api/route/ \
 
 ---
 
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
 ## 👨‍💻 Author
 
 **Prabhavati Agre**
